@@ -2,9 +2,9 @@
 
 # tower 0.2.0.9000 (2024-11-05)
 
-* Add NEWS.md maintain a user-facing changlog.
+* Add changlog.
 
-# tower 0.2.0
+# tower 0.2.0 (2024-10-21)
 
-* See GitHub releases.
+* Initial CRAN Release.
 
