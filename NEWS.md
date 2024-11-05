@@ -2,8 +2,7 @@
 
 # tower 0.2.0.9003 (2024-11-05)
 
-- Same as previous version.
-
+* Remove `unused` argumetn. 
 
 # tower 0.2.0.9002 (2024-11-05)
 
