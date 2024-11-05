@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tower 0.2.0.9003 (2024-11-05)
+
+- Same as previous version.
+
+
 # tower 0.2.0.9002 (2024-11-05)
 
 * Setup reverse dependency check of tapLock on GH Actions.
