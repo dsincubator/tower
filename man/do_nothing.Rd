@@ -4,7 +4,7 @@
 \alias{do_nothing}
 \title{Do nothing}
 \usage{
-do_nothing(data, unused = NULL)
+do_nothing(data)
 }
 \arguments{
 \item{data}{A data frame.}
