@@ -1,8 +1,8 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
-# tower 0.2.0.9003 (2024-11-05)
+# tower 0.2.0.9004 (2024-11-05)
 
-* Remove `unused` argumetn. 
+* Remove `unused` argument 
 
 # tower 0.2.0.9002 (2024-11-05)
 
