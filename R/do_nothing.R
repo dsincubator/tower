@@ -9,7 +9,7 @@
 #' @examples
 #' data <- datasets::BOD
 #' do_nothing(data)
-do_nothing <- function(data, unused = NULL) {
+do_nothing <- function(data) {
   data
 }
 
