@@ -8,8 +8,6 @@ do_nothing(data)
 }
 \arguments{
 \item{data}{A data frame.}
-
-\item{unused}{Unused.}
 }
 \value{
 \code{data}

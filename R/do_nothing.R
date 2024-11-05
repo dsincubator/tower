@@ -1,7 +1,6 @@
 #' Do nothing
 #'
 #' @param data A data frame.
-#' @param unused Unused.
 #'
 #' @return `data`
 #' @export
@@ -10,6 +9,7 @@
 #' data <- datasets::BOD
 #' do_nothing(data)
 do_nothing <- function(data) {
+  abort_if_not_data_frame(data)
   data
 }
 
