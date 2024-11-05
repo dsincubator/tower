@@ -5,7 +5,7 @@ on:
     branches: [main, master]
   pull_request:
     branches: [main, master]
-# NOTE we name it after the reverse dependency
+# NOTE name it after the reverse dependency
 name: R-CMD-check dsincubator-tapLock
 
 permissions: read-all
@@ -28,7 +28,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      # NOTE we also checkout the remote repository of the reverse dependency
+      # NOTE also checkout the remote repository of the reverse dependency
       - uses: actions/checkout@v4
         with:
           repository: dsincubator/tapLock
@@ -43,19 +43,19 @@ jobs:
           http-user-agent: ${{ matrix.config.http-user-agent }}
           use-public-rspm: true
 
-      # NOTE we setup the dependencies of the reverse dependency
+      # NOTE setup the dependencies of the reverse dependency
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           extra-packages: any::rcmdcheck
           needs: check
           working-directory: tapLock
 
-      # NOTE local = PR, i.e. the code that might break the reverse dependency
-      Install local package
-      run: |
-        Rscript -e "pak::local_install()"
+      # NOTE install the code that might break the reverse dependency
+      - name: Install local package
+        run: |
+          Rscript -e "pak::local_install()"
 
-      # NOTE we finally run R CMD check on the reverse depencency
+      # NOTE run R CMD check on the reverse depencency
       - uses: r-lib/actions/check-r-package@v2
         with:
           upload-snapshots: true
