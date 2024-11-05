@@ -18,5 +18,6 @@ do_nothing(data, unused = NULL)
 Do nothing
 }
 \examples{
-do_noting(cars)
+data <- BOD
+do_nothing(data)
 }
